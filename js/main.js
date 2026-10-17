@@ -1,7 +1,7 @@
 'use strict';
 const CONFIG = {
   marca: 'AURA ACTIVE',
-  whatsapp: '5534997280281',
+  whatsapp: '5500000000000',
   mensagemGeral: 'Olá! Vim pela página da {marca} e gostaria de conhecer a coleção.',
   mensagemProduto: 'Olá! Tenho interesse em: {produto} ({marca}). Pode me ajudar com tamanhos e disponibilidade?',
   contato: {
@@ -14,7 +14,6 @@ const $ = (seletor, raiz = document) => raiz.querySelector(seletor);
 const $$ = (seletor, raiz = document) => [...raiz.querySelectorAll(seletor)];
 const reduzMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-/* Número real = 12 ou 13 dígitos e diferente do exemplo (DDD 00 não existe). */
 const numeroConfigurado = () => /^\d{12,13}$/.test(CONFIG.whatsapp) && !CONFIG.whatsapp.startsWith('5500');
 
 function montarLinkWhatsApp(produto) {
