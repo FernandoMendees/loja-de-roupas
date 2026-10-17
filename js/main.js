@@ -1,10 +1,7 @@
 'use strict';
-
-/* ===== CONFIGURAÇÃO CENTRAL: edite aqui antes de publicar ===== */
 const CONFIG = {
   marca: 'AURA ACTIVE',
-  // NÚMERO FICTÍCIO. Troque por DDI + DDD + número, só dígitos (ex.: 5511999999999).
-  whatsapp: '5500000000000',
+  whatsapp: '5534997280281',
   mensagemGeral: 'Olá! Vim pela página da {marca} e gostaria de conhecer a coleção.',
   mensagemProduto: 'Olá! Tenho interesse em: {produto} ({marca}). Pode me ajudar com tamanhos e disponibilidade?',
   contato: {
@@ -45,7 +42,7 @@ function iniciarWhatsApp() {
     if (!alvo) return;
     evento.preventDefault();
     if (!numeroConfigurado()) {
-      mostrarAviso('Canal de demonstração: defina o número real em js/main.js (CONFIG.whatsapp) para abrir a conversa.');
+      mostrarAviso('Canal de demonstração: Essa página é apenas uma demonstração.');
       return;
     }
     window.open(montarLinkWhatsApp(alvo.dataset.produto), '_blank', 'noopener,noreferrer');
